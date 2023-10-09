@@ -57,8 +57,7 @@ public class LinearRegression {
 
             // print out learned model
             float slope = neuralNet.getLayers().get(1).getWeights().get(0);
-           // float intercept = neuralNet.getLayers().get(1).getBiases().get(0);
-            float intercept = neuralNet.getLayers().get(1).getBiases()[0];
+            float intercept = neuralNet.getLayers().get(1).getBiases().get(0);
             
             System.out.println("Original function: y = 0.5 * x + 0.2");
             System.out.println("Estimated/learned function: y = "+slope+" * x + "+intercept);
